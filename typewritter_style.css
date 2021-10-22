@@ -1,0 +1,38 @@
+.typewritter{
+	font-family: monospace;
+	display: inline-block;
+    /* background-color: rgb(252, 252, 252); */
+    /* height: 250px;
+    width: 300px; */
+    text-overflow: ellipsis;
+
+}
+
+.typewritter-text{
+    word-wrap: break-word;
+	display: inline-block;
+	overflow: hidden;
+	letter-spacing: 2px;
+    color: rgb(255, 251, 251);
+	animation: typing 5s steps(37,end),blink .75s step-end infinite;
+	white-space: nowrap;
+	font-size: 20px;
+	font-weight: 500;
+	border-right: 2px solid rgb(8, 8, 8);
+	box-sizing: border-box;
+}
+
+@keyframes typing{
+	from{
+		width: 0%
+	}
+	to{
+		width: 100%
+	}
+}
+@keyframes blink{
+	from,to{
+		border-color: transparent
+	}
+	50%{border-color: orange}
+}
